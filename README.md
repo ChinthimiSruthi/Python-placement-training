@@ -85,3 +85,12 @@ difference=set6-set7
 difference1=set7-set6
 print(difference)
 print(difference1)
+score=float(input("Enter score of students:"))
+if score>=90:
+  print("A")
+elif score>=80 and score<=89:
+  print("B")
+elif score>=70 and score<=79:
+  print("C")
+else:
+  print("D")
