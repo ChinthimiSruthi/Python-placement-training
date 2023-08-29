@@ -94,3 +94,14 @@ elif score>=70 and score<=79:
   print("C")
 else:
   print("D")
+my_dict={"name":"Alice","age":30,"city":"NewYork"}
+name=my_dict["name"]  #"Alice"
+age=my_dict["age"]  #30
+print(name)
+print(age)
+all_keys=my_dict.keys()
+all_values=my_dict.values()
+all_items=my_dict.items()
+print(all_keys)
+print(all_values)
+print(all_items)
