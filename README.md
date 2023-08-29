@@ -61,3 +61,27 @@ tuple_list=([1,2,3],["a","b","c"])
 for sublist in tuple_list:
     for item in sublist:
       print(item)
+#Set is unordered without any index
+set1={1,2,3,4,"sruthi"}
+print(set1)
+set2=set([6,7,8])   #set using set() constructor
+print(set2)
+set3={1,2,3}
+set3.add(4)
+print(set3)
+set4={5,6,7}
+set4.remove(6)
+print(set4)
+set5={8,9,10}
+set5.discard(8)
+print(set5)
+set6={1,2,4}
+set7={4,5,6}
+union=set6|set7
+print(union)
+intersection=set6&set7
+print(intersection)
+difference=set6-set7
+difference1=set7-set6
+print(difference)
+print(difference1)
