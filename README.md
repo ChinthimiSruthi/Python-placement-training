@@ -105,3 +105,8 @@ all_items=my_dict.items()
 print(all_keys)
 print(all_values)
 print(all_items)
+number=int(input("Enter a number:"))
+if number%2==0:
+  print("Even number")
+else:
+  print("Odd number")
