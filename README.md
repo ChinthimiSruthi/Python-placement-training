@@ -135,4 +135,17 @@ if(length and uppercase and lowercase and digit):
   print("Strong Password")
 else:
   print("Weak Password")
-  
+  #create a game where the computer generates random numbers from 1 to 100 #and check whether the number entered is high or low
+
+import random
+target =random.randint(1,100)
+
+while True:
+  guess=int(input("Guess the number: "))
+  if guess < target:
+    print("Too Low")
+  elif guess > target:
+    print("Too High")
+  else:
+    print("Congrats")
+    break
