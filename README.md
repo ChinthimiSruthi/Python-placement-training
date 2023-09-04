@@ -124,3 +124,15 @@ if(lower>=1 and upper>=1 and digit>=1):
   print("valid password")
 else:
   print("Invalid password")
+#another way:
+password=input("Enter password:")
+length=len(password)>=8
+uppercase=any(char.isupper() for char in password)
+lowercase=any(char.islower() for char in password)
+digit=any(char.isdigit() for char in password)
+
+if(length and uppercase and lowercase and digit):
+  print("Strong Password")
+else:
+  print("Weak Password")
+  
