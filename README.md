@@ -176,4 +176,14 @@ def power(base,expo=2): #Here we can give expo=2 in default without expressing a
 
 print(power(2,4))
 print(power(4))
+#Keyword arguments: args,kwargs
+def average(*args):
+  return sum(args)/len(args)
+
+print(average(5,10,15))
+
+def person_info(name,age):
+  print(f"Name: {name},Age: {age}")
+
+person_info(age=19,name="Sruthi")
 
