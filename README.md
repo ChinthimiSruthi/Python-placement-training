@@ -149,3 +149,31 @@ while True:
   else:
     print("Congrats")
     break
+#Iterating through lists:
+fruits=["apple","banana","cherry"]
+for i in fruits:
+    print(i)
+
+flowers={"name":"sruthi","age":19,"place":"hyderabad"}
+for i in flowers:
+  print(i,flowers[i])
+
+#write a program to check if a given positive integer is a prime number
+number=int(input("Enter a number: "))
+if number>1:
+  for i in range(2,int(number/2)+1):
+    if number%i==0:
+      print("It is not a prime number")
+      break
+    else:
+      print("It's a prime number")
+else:
+  print("Not a prime number")
+
+#Default parameters
+def power(base,expo=2): #Here we can give expo=2 in default without expressing as power(2,4)
+  return base**expo
+
+print(power(2,4))
+print(power(4))
+
