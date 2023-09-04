@@ -110,3 +110,17 @@ if number%2==0:
   print("Even number")
 else:
   print("Odd number")
+#PASSWORD VALIDATION
+lower,upper,digit=0,0,0
+char=input("Enter password:")
+if(len(char)>=8):
+  for i in char:
+    lower+=1
+    if(i.isupper()):
+      upper+=1
+    if(i.islower()):
+      digit+=1
+if(lower>=1 and upper>=1 and digit>=1):
+  print("valid password")
+else:
+  print("Invalid password")
