@@ -186,4 +186,16 @@ def person_info(name,age):
   print(f"Name: {name},Age: {age}")
 
 person_info(age=19,name="Sruthi")
+class student:
+  def __init__(self):
+    self.name="Sruthi"
+    self.age=19
+    self.marks=96.00
 
+  def putdata(self):
+    print("Name: ",self.name)
+    print("Age: ",self.age)
+    print("Marks: ",self.marks)
+
+s=student()
+s.putdata()
