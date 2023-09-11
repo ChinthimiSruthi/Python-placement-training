@@ -231,3 +231,12 @@ class bank:
 
 account1 = bank("Alice",1000)
 account1.deposit(500)
+import json
+
+data={"name":"Sruthi","Age":19}
+#dumps is serialisation: converting normal objects into json format
+json_string=json.dumps(data)
+
+json_string='{"name":"Sruthi","Age":19}'
+#loads is deserialisation: converting json format() into objects
+python_object=json.loads(json_string)
