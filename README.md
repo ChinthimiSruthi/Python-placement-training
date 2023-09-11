@@ -210,3 +210,24 @@ dog2=Dog("Max","Poodle")
 
 dog1.bark()
 dog2.bark()
+class bank:
+  def __init__(self,name,balance):
+    self.name=name
+    self.balance=balance
+  def deposit(self,amount):
+      if amount>0:
+        self.balance+=amount
+        print(f"Deposited ${amount}.Newbalance: ${self.balance}")
+      else:
+        print("Invalid amount.Please deposit a positive amount.")
+  def withdraw(self,amount):
+      if amount<=0:
+        print("Invalid amount.Please withdraw a positive amount.")
+      elif amount>self.balance:
+        print("Insufficinet balance.")
+      else:
+        self.balance-=amount
+        print(f"withdraw ${amount}. Newbalance : ${self.balance}")
+
+account1 = bank("Alice",1000)
+account1.deposit(500)
