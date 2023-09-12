@@ -240,3 +240,12 @@ json_string=json.dumps(data)
 json_string='{"name":"Sruthi","Age":19}'
 #loads is deserialisation: converting json format() into objects
 python_object=json.loads(json_string)
+import json 
+
+data = { "name": "Sruthi", "age":19 }
+
+with open ("sample.json", "w") as out:
+    json.dump(data,out)
+
+with open ("sample.json", "r") as read:
+  print (json.load (read))
