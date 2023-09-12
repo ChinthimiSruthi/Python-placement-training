@@ -249,3 +249,10 @@ with open ("sample.json", "w") as out:
 
 with open ("sample.json", "r") as read:
   print (json.load (read))
+try:
+    a=int(input("First number:"))
+    b=int(input("Second number:"))
+    result=a/b
+    print("Result=",result)
+finally:
+    print("executed always")
