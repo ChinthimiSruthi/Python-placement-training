@@ -256,3 +256,37 @@ try:
     print("Result=",result)
 finally:
     print("executed always")
+
+
+    
+import numpy as np
+arr1=np.array([1,2,3,4,5])
+arr2=np.array(["Sruthi"])
+print(arr1)
+print(type(arr2))
+print(arr2)
+
+#if we assign a single value to an array it is 0-D array
+#if we assign certain values like [1,2,3] then it is 1-D array
+#([1,2],[3,4]) is called 2-D array
+#([1,2],[3,4],[5,6],---) is called multi-dimensional array
+a1=np.array(6)
+a2=np.array([1,2,3])
+a3=np.array([1,2],[4,5])
+
+print(a1)
+print(a2)
+print(a3)
+
+#indexing
+ar1=np.array([1,2,3,4,5,8])
+print(ar1[-1])
+
+#Slicing [start:end]
+arr1=np.array([3,4,5,6,7,8,9])
+print(arr1[1:8])
+
+#write a program where variable takes string values(single caharecters) print starting index=-3 and ending index is not specified
+
+b1=np.array(['a','b','c','d','e'])
+print(b1[-3:])
