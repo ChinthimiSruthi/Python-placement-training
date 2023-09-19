@@ -290,3 +290,32 @@ print(arr1[1:8])
 
 b1=np.array(['a','b','c','d','e'])
 print(b1[-3:])
+import numpy as np
+arr1=np.array([1,2,6])
+arr2=np.array([3,4,2])
+print(arr1[1]+arr2[2])
+print(arr1[0])
+print(arr2[-1])
+
+#i-integer
+#b-boolean
+#f-float
+#u-unsigned integer
+#M-datetime
+
+a1=np.array([1,2])
+print(a1)
+print(a1.dtype)
+
+#write a program where it has two different varibales with two different array elements that are assigned. The first variable is copied by using copy function and the second varibale has to be viewed by using view function.
+
+ar1=np.array([1,2,3,5,6,7])
+ar2=np.array(['a','g','y'])
+print(ar1.copy())
+ar1[1]=20
+print(ar1)
+print(ar1.view())
+print(ar1.base)
+print(ar2.base)
+arrr1=np.array([[2,4,6,7],[4,5,4,6]])
+print(arrr1.shape)
